@@ -140,7 +140,7 @@ let draw = function() {
   g.clearRect(0, 24, g.getWidth(), g.getHeight() - 24); // clear whole background (w/o widgets)
   var date = new Date(); // Actually the current date, this one is shown
   var timeStr = require("locale").time(date, 1); // Hour and minute
-  g.setColor(1, 0, 0)
+  //g.setColor(1, 0, 0)
   g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y); // draw time
   if (secondsScreen) {
     y += 65;
