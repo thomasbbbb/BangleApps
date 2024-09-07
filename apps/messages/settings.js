@@ -42,7 +42,7 @@
     },
     /*LANG*/'Vibrate timer': {
       value: settings().vibrateTimeout,
-      min: 0, max: settings().maxUnreadTimeout, step : 10,
+      min: 0, max: settings().maxUnreadTimeout, step : 1,
       format: v => v?v+"s":/*LANG*/"Off",
       onchange: v => updateSetting("vibrateTimeout", v)
     },
