@@ -192,7 +192,9 @@ let draw = function() {
       g.setFont("Vector", 24);
     else
       g.setFont("6x8", 2);
+    g.setColor(0, 0, 1); //tbb: date blue color
     g.drawString(dateStr, x, y);
+    g.setColor(0, 0, 0); //tbb: week(day) black color
     if (calWeek || weekDay) {
       var dowcwStr = "";
       if (calWeek)
