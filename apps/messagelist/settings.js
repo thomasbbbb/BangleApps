@@ -74,7 +74,7 @@
       },
       /*LANG*/"Vibrate timer": {
         value: settings.vibrateTimeout,
-        min: 0, max: 240, step: 10,
+        min: 0, max: 240, step: 1,
         format: v => v ? v+"s" :/*LANG*/"Forever",
         onchange: v => updateSetting("vibrateTimeout", v)
       },
