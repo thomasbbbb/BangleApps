@@ -198,7 +198,7 @@ let draw = function() {
     if (calWeek || weekDay) {
       var dowcwStr = "";
       if (calWeek)
-        dowcwStr = " #" + ("0" + ISO8601calWeek(date)).slice(-2);
+        dowcwStr = " KW" + ("0" + ISO8601calWeek(date)).slice(-2);
       if (weekDay)
         dowcwStr = require("locale").dow(date, calWeek ? 1 : 0) + dowcwStr;  //weekDay e.g. Monday or weekDayShort #<calWeek> e.g. Mon #01
       else //week #01
