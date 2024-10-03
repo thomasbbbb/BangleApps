@@ -138,6 +138,11 @@ let draw = function() {
     .fillRect(0, g.getHeight() - 23, g.getWidth(), g.getHeight()).reset();
   /* */
   g.clearRect(0, 24, g.getWidth(), g.getHeight() - 24); // clear whole background (w/o widgets)
+
+  //tbb: test draw area
+  g.setColor(1,0,1);
+  g.drawRect(0, 24, g.getWidth(), g.getHeight() - 24);
+
   var date = new Date(); // Actually the current date, this one is shown
   var timeStr = require("locale").time(date, 1); // Hour and minute
   g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y); // draw time
