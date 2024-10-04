@@ -130,7 +130,7 @@ let doColor = function() {
 // Actually draw the watch face
 let draw = function() {
   var x = g.getWidth() / 2;
-  var y = g.getHeight() / 2 - (secondsMode !== "Never" ? 24 : (vectorFont ? 18 : 0));
+  var y = g.getHeight() / 2 - (secondsMode !== "Never" ? 24 : (vectorFont ? 20 : 0));
   g.reset();
   /* This is to mark the widget areas during development.
   g.setColor("#888")
